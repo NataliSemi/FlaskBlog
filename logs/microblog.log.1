@@ -1,0 +1,109 @@
+2021-02-23 20:04:28,265 ERROR: Exception on /register [POST] [in d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.IntegrityError: UNIQUE constraint failed: user.email
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\Python\FlaskBookRegistration\app\routes.py", line 87, in register
+    db.session.commit()
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\scoping.py", line 163, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\session.py", line 1046, in commit
+    self.transaction.commit()
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\session.py", line 504, in commit
+    self._prepare_impl()
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\session.py", line 483, in _prepare_impl
+    self.session.flush()
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\session.py", line 2540, in flush
+    self._flush(objects)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\session.py", line 2682, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\session.py", line 2642, in _flush
+    flush_context.execute()
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 586, in execute
+    persistence.save_obj(
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\persistence.py", line 239, in save_obj
+    _emit_insert_statements(
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\persistence.py", line 1135, in _emit_insert_statements
+    result = cached_connections[connection].execute(
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\sql\elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\base.py", line 1124, in _execute_clauseelement
+    ret = self._execute_context(
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\base.py", line 1316, in _execute_context
+    self._handle_dbapi_exception(
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\base.py", line 1510, in _handle_dbapi_exception
+    util.raise_(
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
+    raise exception
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.email
+[SQL: INSERT INTO user (username, email, password_hash, about_me, last_seen) VALUES (?, ?, ?, ?, ?)]
+[parameters: ('yurii', 'nata654s@ukr.net', 'pbkdf2:sha256:150000$I05vUXx6$5bc02e8ef28bcbdce5c8945f9be95289a3a899ad91fc6ac39595bd54aef75605', None, '2021-02-23 18:04:28.265576')]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2021-02-23 20:06:09,688 ERROR: Exception on /edit_profile [GET] [in d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Python\FlaskBookRegistration\app\routes.py", line 121, in edit_profile
+    return render_template('edit_profile.html', title='Edit Profile',
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "d:\python\flaskbookregistration\env\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "d:\python\flaskbookregistration\env\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Python\FlaskBookRegistration\app\templates\edit_profile.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "D:\Python\FlaskBookRegistration\app\templates\base.html", line 37, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\Python\FlaskBookRegistration\app\templates\edit_profile.html", line 8, in block "content"
+    {{ form.hidden.label }}<br>
+  File "d:\python\flaskbookregistration\env\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.forms.EditProfileForm object' has no attribute 'hidden'
+2021-02-23 20:06:55,230 INFO: Microblog startup [in D:\Python\FlaskBookRegistration\app\__init__.py:43]
