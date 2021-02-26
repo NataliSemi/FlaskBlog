@@ -1,104 +1,4 @@
-2021-02-23 19:55:18,622 ERROR: Exception on / [GET] [in d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "D:\Python\FlaskBookRegistration\app\routes.py", line 30, in index
-    page, app.config['POSTS_PER_PAGE'], False)
-KeyError: 'POSTS_PER_PAGE'
-2021-02-23 19:55:21,663 ERROR: Exception on /index [GET] [in d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "D:\Python\FlaskBookRegistration\app\routes.py", line 30, in index
-    page, app.config['POSTS_PER_PAGE'], False)
-KeyError: 'POSTS_PER_PAGE'
-2021-02-23 19:55:22,588 ERROR: Exception on /index [GET] [in d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "D:\Python\FlaskBookRegistration\app\routes.py", line 30, in index
-    page, app.config['POSTS_PER_PAGE'], False)
-KeyError: 'POSTS_PER_PAGE'
-2021-02-23 19:55:23,455 ERROR: Exception on /index [GET] [in d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "D:\Python\FlaskBookRegistration\app\routes.py", line 30, in index
-    page, app.config['POSTS_PER_PAGE'], False)
-KeyError: 'POSTS_PER_PAGE'
-2021-02-23 19:55:25,091 ERROR: Exception on /explore [GET] [in d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
-    return func(*args, **kwargs)
-  File "D:\Python\FlaskBookRegistration\app\routes.py", line 45, in explore
-    page, app.config['POSTS_PER_PAGE'], False)
-KeyError: 'POSTS_PER_PAGE'
-2021-02-23 19:55:57,694 INFO: Microblog startup [in D:\Python\FlaskBookRegistration\app\__init__.py:43]
-2021-02-23 19:56:20,957 INFO: Microblog startup [in D:\Python\FlaskBookRegistration\app\__init__.py:43]
-2021-02-23 19:56:56,598 INFO: Microblog startup [in D:\Python\FlaskBookRegistration\app\__init__.py:43]
-2021-02-23 19:58:38,072 INFO: Microblog startup [in D:\Python\FlaskBookRegistration\app\__init__.py:43]
-2021-02-23 20:00:03,160 INFO: Microblog startup [in D:\Python\FlaskBookRegistration\app\__init__.py:43]
-2021-02-23 20:00:10,702 ERROR: Exception on /edit_profile [GET] [in d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py:1891]
+2021-02-23 20:03:50,118 ERROR: Exception on /edit_profile [GET] [in d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -135,4 +35,40 @@ Traceback (most recent call last):
   File "d:\python\flaskbookregistration\env\lib\site-packages\jinja2\environment.py", line 471, in getattr
     return getattr(obj, attribute)
 jinja2.exceptions.UndefinedError: 'app.forms.EditProfileForm object' has no attribute 'hidden'
-2021-02-23 20:03:45,215 INFO: Microblog startup [in D:\Python\FlaskBookRegistration\app\__init__.py:43]
+2021-02-23 20:03:56,217 ERROR: Exception on /edit_profile [GET] [in d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\Python\FlaskBookRegistration\app\routes.py", line 121, in edit_profile
+    return render_template('edit_profile.html', title='Edit Profile',
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\templating.py", line 137, in render_template
+    return _render(
+  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "d:\python\flaskbookregistration\env\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "d:\python\flaskbookregistration\env\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "d:\python\flaskbookregistration\env\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Python\FlaskBookRegistration\app\templates\edit_profile.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "D:\Python\FlaskBookRegistration\app\templates\base.html", line 37, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\Python\FlaskBookRegistration\app\templates\edit_profile.html", line 8, in block "content"
+    {{ form.hidden.label }}<br>
+  File "d:\python\flaskbookregistration\env\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'app.forms.EditProfileForm object' has no attribute 'hidden'

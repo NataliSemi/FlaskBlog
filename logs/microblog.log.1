@@ -1,109 +1,119 @@
-2021-02-23 20:04:28,265 ERROR: Exception on /register [POST] [in d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py:1891]
+2021-02-24 22:00:55,529 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:43]
+2021-02-24 22:01:04,505 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:43]
+2021-02-24 22:01:22,432 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:43]
+2021-02-24 22:01:24,575 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:43]
+2021-02-24 23:16:34,253 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:44]
+2021-02-24 23:16:47,550 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:44]
+2021-02-24 23:17:06,035 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:44]
+2021-02-24 23:17:16,470 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:44]
+2021-02-24 23:17:58,327 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:44]
+2021-02-24 23:18:51,469 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:44]
+2021-02-24 23:19:24,013 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:44]
+2021-02-24 23:20:08,914 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:46]
+2021-02-24 23:37:56,356 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:46]
+2021-02-25 19:48:27,073 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:49]
+2021-02-25 19:48:53,321 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:49]
+2021-02-25 19:49:23,888 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:49]
+2021-02-25 20:01:04,071 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:49]
+2021-02-25 21:12:16,457 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:53]
+2021-02-25 21:12:19,215 ERROR: Exception on / [GET] [in /home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py:1891]
 Traceback (most recent call last):
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\base.py", line 1276, in _execute_context
-    self.dialect.do_execute(
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\default.py", line 608, in do_execute
-    cursor.execute(statement, parameters)
-sqlite3.IntegrityError: UNIQUE constraint failed: user.email
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
     reraise(exc_type, exc_value, tb)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\_compat.py", line 39, in reraise
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
     raise value
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "D:\Python\FlaskBookRegistration\app\routes.py", line 87, in register
-    db.session.commit()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\scoping.py", line 163, in do
-    return getattr(self.registry(), name)(*args, **kwargs)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\session.py", line 1046, in commit
-    self.transaction.commit()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\session.py", line 504, in commit
-    self._prepare_impl()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\session.py", line 483, in _prepare_impl
-    self.session.flush()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\session.py", line 2540, in flush
-    self._flush(objects)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\session.py", line 2682, in _flush
-    transaction.rollback(_capture_exception=True)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\util\langhelpers.py", line 68, in __exit__
-    compat.raise_(
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
-    raise exception
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\session.py", line 2642, in _flush
-    flush_context.execute()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 422, in execute
-    rec.execute(self)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\unitofwork.py", line 586, in execute
-    persistence.save_obj(
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\persistence.py", line 239, in save_obj
-    _emit_insert_statements(
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\orm\persistence.py", line 1135, in _emit_insert_statements
-    result = cached_connections[connection].execute(
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\base.py", line 1011, in execute
-    return meth(self, multiparams, params)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\sql\elements.py", line 298, in _execute_on_connection
-    return connection._execute_clauseelement(self, multiparams, params)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\base.py", line 1124, in _execute_clauseelement
-    ret = self._execute_context(
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\base.py", line 1316, in _execute_context
-    self._handle_dbapi_exception(
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\base.py", line 1510, in _handle_dbapi_exception
-    util.raise_(
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\util\compat.py", line 182, in raise_
-    raise exception
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\base.py", line 1276, in _execute_context
-    self.dialect.do_execute(
-  File "d:\python\flaskbookregistration\env\lib\site-packages\sqlalchemy\engine\default.py", line 608, in do_execute
-    cursor.execute(statement, parameters)
-sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) UNIQUE constraint failed: user.email
-[SQL: INSERT INTO user (username, email, password_hash, about_me, last_seen) VALUES (?, ?, ?, ?, ?)]
-[parameters: ('yurii', 'nata654s@ukr.net', 'pbkdf2:sha256:150000$I05vUXx6$5bc02e8ef28bcbdce5c8945f9be95289a3a899ad91fc6ac39595bd54aef75605', None, '2021-02-23 18:04:28.265576')]
-(Background on this error at: http://sqlalche.me/e/13/gkpj)
-2021-02-23 20:06:09,688 ERROR: Exception on /edit_profile [GET] [in d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py:1891]
-Traceback (most recent call last):
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
     return func(*args, **kwargs)
-  File "D:\Python\FlaskBookRegistration\app\routes.py", line 121, in edit_profile
-    return render_template('edit_profile.html', title='Edit Profile',
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\templating.py", line 137, in render_template
+  File "/home/nata/programming/flask-book/FlaskBook/app/routes.py", line 36, in index
+    return render_template('index.html', title='Home', form=form,
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
     return _render(
-  File "d:\python\flaskbookregistration\env\lib\site-packages\flask\templating.py", line 120, in _render
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
     rv = template.render(context)
-  File "d:\python\flaskbookregistration\env\lib\site-packages\jinja2\environment.py", line 1090, in render
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
     self.environment.handle_exception()
-  File "d:\python\flaskbookregistration\env\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
     reraise(*rewrite_traceback_stack(source=source))
-  File "d:\python\flaskbookregistration\env\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
     raise value.with_traceback(tb)
-  File "D:\Python\FlaskBookRegistration\app\templates\edit_profile.html", line 1, in top-level template code
-    {% extends 'base.html' %}
-  File "D:\Python\FlaskBookRegistration\app\templates\base.html", line 37, in top-level template code
+  File "/home/nata/programming/flask-book/FlaskBook/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/nata/programming/flask-book/FlaskBook/app/templates/base.html", line 37, in top-level template code
     {% block content %}{% endblock %}
-  File "D:\Python\FlaskBookRegistration\app\templates\edit_profile.html", line 8, in block "content"
-    {{ form.hidden.label }}<br>
-  File "d:\python\flaskbookregistration\env\lib\site-packages\jinja2\environment.py", line 471, in getattr
-    return getattr(obj, attribute)
-jinja2.exceptions.UndefinedError: 'app.forms.EditProfileForm object' has no attribute 'hidden'
-2021-02-23 20:06:55,230 INFO: Microblog startup [in D:\Python\FlaskBookRegistration\app\__init__.py:43]
+  File "/home/nata/programming/flask-book/FlaskBook/app/templates/index.html", line 4, in block "content"
+    <h1>{{ _('Hi, %(username)s!', username=current_user.username) }}</h1>
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/ext.py", line 144, in _gettext_alias
+    return __context.call(__context.resolve("gettext"), *args, **kwargs)
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/ext.py", line 150, in gettext
+    rv = __context.call(func, __string)
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask_babel/__init__.py", line 109, in <lambda>
+    lambda x: get_translations().ugettext(x),
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask_babel/__init__.py", line 209, in get_translations
+    return get_domain().get_translations()
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask_babel/__init__.py", line 554, in get_translations
+    locale = get_locale()
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask_babel/__init__.py", line 226, in get_locale
+    rv = babel.locale_selector_func()
+  File "/home/nata/programming/flask-book/FlaskBook/app/__init__.py", line 57, in get_locale
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+NameError: name 'request' is not defined
+2021-02-25 21:12:20,077 ERROR: Exception on /favicon.ico [GET] [in /home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1926, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1908, in raise_routing_exception
+    raise request.routing_exception
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/ctx.py", line 350, in match_request
+    result = self.url_adapter.match(return_rule=True)
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 1945, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1816, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1744, in handle_http_exception
+    return handler(e)
+  File "/home/nata/programming/flask-book/FlaskBook/app/errors.py", line 6, in not_found_error
+    return render_template('404.html'), 404
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/nata/programming/flask-book/FlaskBook/app/templates/404.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/nata/programming/flask-book/FlaskBook/app/templates/base.html", line 50, in top-level template code
+    {% block scripts %}
+  File "/home/nata/programming/flask-book/FlaskBook/app/templates/base.html", line 51, in block "scripts"
+    {{ super() }}
+jinja2.exceptions.UndefinedError: there is no parent block called 'scripts'.
+2021-02-25 21:20:09,291 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:52]
+2021-02-25 21:20:37,767 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:52]
+2021-02-25 21:26:25,521 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:52]
+2021-02-25 21:35:41,554 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:52]
+2021-02-25 21:35:52,040 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:52]
+2021-02-25 21:36:05,183 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:52]
+2021-02-25 21:37:34,300 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:52]
+2021-02-25 21:41:11,530 INFO: Microblog startup [in /home/nata/programming/flask-book/FlaskBook/app/__init__.py:52]
