@@ -1,6 +1,0 @@
-set FLASK_APP=microblog.py
-set FLASK_DEBUG=1
-
-
-mailing page 73
-p 54
