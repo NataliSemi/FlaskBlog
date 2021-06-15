@@ -193,7 +193,7 @@ def reset_password(token):
 
 @app.route('/translate', methods=['POST'])
 @login_required
-    def translate_text():
-        return jsonify({'text':translate(request.form['text'],
-                                        request.form['source_language'],
-                                        request.form('dest_language'))})
+def translate_text():
+    return jsonify({'text':translate(request.form['text'],
+                                request.form['source_language'],
+                                request.form('dest_language'))})
