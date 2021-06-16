@@ -1,106 +1,111 @@
-2021-06-16 00:01:58,255 ERROR: Exception on /auth/login [GET] [in /home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py:1891]
+2021-06-16 08:12:54,837 INFO: Microblog startup [in D:\Python\FlaskBlog\app\__init__.py:52]
+2021-06-16 08:13:16,236 INFO: Microblog startup [in D:\Python\FlaskBlog\app\__init__.py:52]
+2021-06-16 08:19:46,652 INFO: Microblog startup [in D:\Python\FlaskBlog\app\__init__.py:77]
+2021-06-16 08:19:48,493 ERROR: Exception on /auth/login [GET] [in d:\python\flaskblog\env\lib\site-packages\flask\app.py:1892]
 Traceback (most recent call last):
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+  File "d:\python\flaskblog\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+  File "d:\python\flaskblog\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+  File "d:\python\flaskblog\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
     reraise(exc_type, exc_value, tb)
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+  File "d:\python\flaskblog\env\lib\site-packages\flask\_compat.py", line 39, in reraise
     raise value
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "d:\python\flaskblog\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "d:\python\flaskblog\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/nata/programming/flask-book/FlaskBook/app/auth/routes.py", line 28, in login
+  File "D:\Python\FlaskBlog\app\auth\routes.py", line 28, in login
     return render_template('auth/login.html', title=_('Sign In'), form=form)
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
-    return _render(
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+  File "d:\python\flaskblog\env\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "d:\python\flaskblog\env\lib\site-packages\flask\templating.py", line 120, in _render
     rv = template.render(context)
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+  File "d:\python\flaskblog\env\lib\site-packages\jinja2\environment.py", line 1090, in render
     self.environment.handle_exception()
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+  File "d:\python\flaskblog\env\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
     reraise(*rewrite_traceback_stack(source=source))
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+  File "d:\python\flaskblog\env\lib\site-packages\jinja2\_compat.py", line 28, in reraise
     raise value.with_traceback(tb)
-  File "/home/nata/programming/flask-book/FlaskBook/app/templates/auth/login.html", line 2, in top-level template code
+  File "D:\Python\FlaskBlog\app\templates\auth\login.html", line 2, in top-level template code
     {% import 'bootstrap/wtf.html' as wtf %}
-  File "/home/nata/programming/flask-book/FlaskBook/app/templates/base.html", line 1, in top-level template code
+  File "D:\Python\FlaskBlog\app\templates\base.html", line 1, in top-level template code
     {% extends 'bootstrap/base.html' %}
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+  File "d:\python\flaskblog\env\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
     {% block doc -%}
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+  File "d:\python\flaskblog\env\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
     {%- block html %}
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+  File "d:\python\flaskblog\env\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
     {% block body -%}
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+  File "d:\python\flaskblog\env\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
     {% block content -%}
-  File "/home/nata/programming/flask-book/FlaskBook/app/templates/base.html", line 55, in block "content"
+  File "D:\Python\FlaskBlog\app\templates\base.html", line 55, in block "content"
     {% block app_content %}{% endblock %}
-  File "/home/nata/programming/flask-book/FlaskBook/app/templates/auth/login.html", line 12, in block "app_content"
+  File "D:\Python\FlaskBlog\app\templates\auth\login.html", line 12, in block "app_content"
     <p>{{ _('New User?') }} <a href="{{ url_for('register') }}">{{ _('Click to Register!') }}</a></p>
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/helpers.py", line 370, in url_for
+  File "d:\python\flaskblog\env\lib\site-packages\flask\helpers.py", line 370, in url_for
     return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 2216, in handle_url_build_error
+  File "d:\python\flaskblog\env\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
     reraise(exc_type, exc_value, tb)
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+  File "d:\python\flaskblog\env\lib\site-packages\flask\_compat.py", line 39, in reraise
     raise value
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/helpers.py", line 357, in url_for
-    rv = url_adapter.build(
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2179, in build
+  File "d:\python\flaskblog\env\lib\site-packages\flask\helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "d:\python\flaskblog\env\lib\site-packages\werkzeug\routing.py", line 2179, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'register'. Did you mean 'auth.register' instead?
-2021-06-16 00:02:01,260 ERROR: Exception on /auth/login [GET] [in /home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py:1891]
+2021-06-16 08:49:55,294 ERROR: Exception on /auth/login [GET] [in d:\python\flaskblog\env\lib\site-packages\flask\app.py:1892]
 Traceback (most recent call last):
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+  File "d:\python\flaskblog\env\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+  File "d:\python\flaskblog\env\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
     rv = self.handle_user_exception(e)
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+  File "d:\python\flaskblog\env\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
     reraise(exc_type, exc_value, tb)
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+  File "d:\python\flaskblog\env\lib\site-packages\flask\_compat.py", line 39, in reraise
     raise value
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+  File "d:\python\flaskblog\env\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
     rv = self.dispatch_request()
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+  File "d:\python\flaskblog\env\lib\site-packages\flask\app.py", line 1936, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/home/nata/programming/flask-book/FlaskBook/app/auth/routes.py", line 28, in login
+  File "D:\Python\FlaskBlog\app\auth\routes.py", line 28, in login
     return render_template('auth/login.html', title=_('Sign In'), form=form)
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
-    return _render(
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+  File "d:\python\flaskblog\env\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "d:\python\flaskblog\env\lib\site-packages\flask\templating.py", line 120, in _render
     rv = template.render(context)
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+  File "d:\python\flaskblog\env\lib\site-packages\jinja2\environment.py", line 1090, in render
     self.environment.handle_exception()
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+  File "d:\python\flaskblog\env\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
     reraise(*rewrite_traceback_stack(source=source))
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+  File "d:\python\flaskblog\env\lib\site-packages\jinja2\_compat.py", line 28, in reraise
     raise value.with_traceback(tb)
-  File "/home/nata/programming/flask-book/FlaskBook/app/templates/auth/login.html", line 2, in top-level template code
+  File "D:\Python\FlaskBlog\app\templates\auth\login.html", line 2, in top-level template code
     {% import 'bootstrap/wtf.html' as wtf %}
-  File "/home/nata/programming/flask-book/FlaskBook/app/templates/base.html", line 1, in top-level template code
+  File "D:\Python\FlaskBlog\app\templates\base.html", line 1, in top-level template code
     {% extends 'bootstrap/base.html' %}
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+  File "d:\python\flaskblog\env\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
     {% block doc -%}
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+  File "d:\python\flaskblog\env\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
     {%- block html %}
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+  File "d:\python\flaskblog\env\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
     {% block body -%}
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+  File "d:\python\flaskblog\env\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
     {% block content -%}
-  File "/home/nata/programming/flask-book/FlaskBook/app/templates/base.html", line 55, in block "content"
+  File "D:\Python\FlaskBlog\app\templates\base.html", line 55, in block "content"
     {% block app_content %}{% endblock %}
-  File "/home/nata/programming/flask-book/FlaskBook/app/templates/auth/login.html", line 12, in block "app_content"
-    <p>{{ _('New User?') }} <a href="{{ url_for('register') }}">{{ _('Click to Register!') }}</a></p>
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/helpers.py", line 370, in url_for
+  File "D:\Python\FlaskBlog\app\templates\auth\login.html", line 12, in block "app_content"
+    <p>{{ _('New User?') }} <a href="{{ url_for('auth.register') }}">{{ _('Click to Register!') }}</a></p>
+  File "d:\python\flaskblog\env\lib\site-packages\flask\helpers.py", line 370, in url_for
     return appctx.app.handle_url_build_error(error, endpoint, values)
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/app.py", line 2216, in handle_url_build_error
+  File "d:\python\flaskblog\env\lib\site-packages\flask\app.py", line 2216, in handle_url_build_error
     reraise(exc_type, exc_value, tb)
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+  File "d:\python\flaskblog\env\lib\site-packages\flask\_compat.py", line 39, in reraise
     raise value
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/flask/helpers.py", line 357, in url_for
-    rv = url_adapter.build(
-  File "/home/nata/programming/flask-book/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2179, in build
+  File "d:\python\flaskblog\env\lib\site-packages\flask\helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "d:\python\flaskblog\env\lib\site-packages\werkzeug\routing.py", line 2179, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'register'. Did you mean 'auth.register' instead?
+2021-06-16 08:51:08,711 INFO: Microblog startup [in D:\Python\FlaskBlog\app\__init__.py:77]
+2021-06-16 10:44:26,272 INFO: Microblog startup [in D:\Python\FlaskBlog\app\__init__.py:77]
